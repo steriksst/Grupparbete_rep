@@ -11,6 +11,8 @@ namespace stina_testar
         static void Main(string[] args)
         {
             //här kommer en kod-strip av Stina
+
+            jag skriva in några rader kod för att testa
         }
     }
 }
