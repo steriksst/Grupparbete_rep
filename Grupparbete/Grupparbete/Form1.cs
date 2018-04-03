@@ -24,8 +24,9 @@ namespace Grupparbete
         {
             SqlConnection connect = new SqlConnection();
 
-            connect.ConnectionString = "Data Source=LAPTOP-4R563C6G\\SQL2017;Initial Catalog=grupp;Integrated Security=True";
+            connect.ConnectionString = "Data Source=LAPTOP-G3E2H49R\\SQL2017;Initial Catalog=grupp;Integrated Security=True";
             connect.Open();
+            //stinas SQL-connection: LAPTOP-G3E2H49R
 
             SqlCommand MyQuery = new SqlCommand("select * from accepted_2007_to_2017", connect);
 
@@ -67,11 +68,6 @@ namespace Grupparbete
             chart2.Series["Series1"].ChartType = SeriesChartType.Point;
 
             chart1.Series["Series1"].Points.AddY(10);
-        }
-
-        private void chart1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

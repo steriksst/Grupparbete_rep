@@ -56,7 +56,6 @@
             this.chart1.Size = new System.Drawing.Size(798, 703);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
-            this.chart1.Click += new System.EventHandler(this.chart1_Click);
             // 
             // chart2
             // 
@@ -65,7 +64,6 @@
             legend2.Name = "Legend1";
             this.chart2.Legends.Add(legend2);
             this.chart2.Location = new System.Drawing.Point(886, 23);
-            this.chart2.Margin = new System.Windows.Forms.Padding(6);
             this.chart2.Name = "chart2";
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Legend1";
@@ -89,7 +87,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             this.ResumeLayout(false);
-
         }
 
         #endregion
