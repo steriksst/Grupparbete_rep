@@ -71,7 +71,7 @@ namespace Grupparbete
                 chart1.Series["Series1"].Points.AddY(L.Loan_purpose);
             }
 
-
+            //Stina testar igen 
         }
     }
 }
