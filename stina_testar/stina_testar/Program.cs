@@ -15,7 +15,7 @@ namespace stina_testar
 
             SqlConnection connect = new SqlConnection();
 
-            connect.ConnectionString = "Data Source=LAPTOP-4R563C6G\\SQL2017;Initial Catalog=grupp;Integrated Security=True";
+            connect.ConnectionString = "Data Source=LAPTOP-G3E2H49R\\SQL2017;Initial Catalog=grupp;Integrated Security=True";
             connect.Open();
 
             SqlCommand MyQuery = new SqlCommand("select * from accepted_2007_to_2017", connect);
