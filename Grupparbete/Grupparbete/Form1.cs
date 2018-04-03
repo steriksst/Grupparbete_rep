@@ -30,17 +30,7 @@ namespace Grupparbete
             SqlCommand MyQuery = new SqlCommand("select * from accepted_2007_to_2017", connect);
 
             SqlDataReader MyReader = MyQuery.ExecuteReader();
-
-            while (MyReader.Read())
-            {  
-                double loan_amount = Convert.ToDouble(MyReader["loan_amnt"]);
-                double int_rate = Convert.ToDouble(MyReader["int_rate"]);
-                string grade = MyReader["grade"].ToString();
-                string loan_purpose = MyReader["loan_purpose"].ToString();
-                double total_rec_int = Convert.ToDouble(MyReader["total_rec_int"]);
-
-            }
-
+            
             chart1.Titles.Add("Loan Purpose");
             chart1.ChartAreas[0].AxisX.Title = "";
             chart1.ChartAreas[0].AxisY.Title = "";
@@ -50,6 +40,31 @@ namespace Grupparbete
             chart2.ChartAreas[0].AxisX.Title = "";
             chart2.ChartAreas[0].AxisY.Title = "";
             chart2.Series["Series1"].ChartType = SeriesChartType.Point;
+
+            List<Loans> Loans = new List<Loans>();
+
+            double loan_amount;
+            double int_rate;
+            string grade;
+            string loan_purpose;
+            double total_rec_int;
+
+            while (MyReader.Read())
+            {  
+                loan_amount = Convert.ToDouble(MyReader["loan_amnt"]);
+                int_rate = Convert.ToDouble(MyReader["int_rate"]);
+                grade = MyReader["grade"].ToString();
+                loan_purpose = MyReader["loan_purpose"].ToString();
+                total_rec_int = Convert.ToDouble(MyReader["total_rec_int"]);
+
+                Loans.Add(new Loans(
+                    loan_amount,
+                    int_rate,
+                    grade,
+                    loan_purpose,
+                    total_rec_int
+                    ));
+            }     
         }
     }
 }
