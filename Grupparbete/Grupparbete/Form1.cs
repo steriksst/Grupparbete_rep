@@ -68,5 +68,10 @@ namespace Grupparbete
 
             chart1.Series["Series1"].Points.AddY(10);
         }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

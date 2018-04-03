@@ -56,6 +56,7 @@
             this.chart1.Size = new System.Drawing.Size(798, 703);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
+            this.chart1.Click += new System.EventHandler(this.chart1_Click);
             // 
             // chart2
             // 
@@ -88,7 +89,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             this.ResumeLayout(false);
-          
 
         }
 
