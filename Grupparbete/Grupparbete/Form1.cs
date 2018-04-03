@@ -55,7 +55,7 @@ namespace Grupparbete
                     total_rec_int
                     ));
             }
-            
+
             chart1.Titles.Add("Loan Purpose");
             chart1.ChartAreas[0].AxisX.Title = "";
             chart1.ChartAreas[0].AxisY.Title = "";
@@ -65,16 +65,8 @@ namespace Grupparbete
             chart2.ChartAreas[0].AxisX.Title = "";
             chart2.ChartAreas[0].AxisY.Title = "";
             chart2.Series["Series1"].ChartType = SeriesChartType.Point;
-     
-            /*int count = LoanList.Count;
-            foreach (Loans L in LoanList.Where(x => x.Loan_purpose == "Other"))
-            {
-                    chart1.Series["Series1"].Points.AddY(L.Loan_purpose); 
-            }*/
 
-            //Stina testar igen 
+            chart1.Series["Series1"].Points.AddY(10);
         }
-
-
     }
 }
