@@ -53,7 +53,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(1287, 1225);
+            this.chart1.Size = new System.Drawing.Size(798, 703);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 
@@ -63,13 +63,13 @@
             this.chart2.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.chart2.Legends.Add(legend2);
-            this.chart2.Location = new System.Drawing.Point(1396, 120);
+            this.chart2.Location = new System.Drawing.Point(886, 23);
             this.chart2.Name = "chart2";
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Legend1";
             series2.Name = "Series1";
             this.chart2.Series.Add(series2);
-            this.chart2.Size = new System.Drawing.Size(1335, 1322);
+            this.chart2.Size = new System.Drawing.Size(734, 703);
             this.chart2.TabIndex = 1;
             this.chart2.Text = "chart2";
             // 
@@ -77,7 +77,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2812, 1705);
+            this.ClientSize = new System.Drawing.Size(1904, 911);
             this.Controls.Add(this.chart2);
             this.Controls.Add(this.chart1);
             this.Margin = new System.Windows.Forms.Padding(6);
@@ -87,7 +87,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             this.ResumeLayout(false);
-
         }
 
         #endregion

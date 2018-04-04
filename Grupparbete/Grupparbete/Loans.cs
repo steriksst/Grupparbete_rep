@@ -14,13 +14,17 @@ namespace Grupparbete
         string loan_purpose;
         double total_rec_int;
 
-        public Loans(double loan_amount, double int_rate, string grade, string loan_purpose,double total_rec_int)
+        public Loans(double loan_amount,
+        double int_rate,
+        string grade,
+        string loan_purpose,
+        double total_rec_int)
         {
-            this.loan_amount = loan_amount;
-            this.int_rate = int_rate;
-            this.grade = grade;
-            this.loan_purpose = loan_purpose;
-            this.total_rec_int = total_rec_int;
+            this.Loan_amount = Loan_amount;
+            this.Int_rate = Int_rate;
+            this.Grade = Grade;
+            this.Loan_purpose = Loan_purpose;
+            this.Total_rec_int = Total_rec_int;
         }
 
         public double Loan_amount { get => loan_amount; set => loan_amount = value; }
